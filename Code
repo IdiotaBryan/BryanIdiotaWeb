@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>BryanIdiotaWeb</title>
+
+  <style>
+    body {
+      background: black;
+      color: #00ffcc;
+      font-family: "Courier New", monospace;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      color: red;
+      text-align: center;
+      font-size: 48px;
+      animation: pisca 1s infinite;
+    }
+
+    @keyframes pisca {
+      0% { opacity: 1; }
+      50% { opacity: 0.3; }
+      100% { opacity: 1; }
+    }
+
+    .caos {
+      font-size: 18px;
+      margin: 20px;
+      line-height: 1.6;
+      word-break: break-all;
+    }
+
+    img {
+      display: block;
+      margin: 40px auto;
+      max-width: 90%;
+      border: 5px dashed lime;
+    }
+
+    .botao-caos {
+      display: block;
+      margin: 40px auto;
+      padding: 20px;
+      font-size: 22px;
+      background: red;
+      color: black;
+      border: 5px dashed yellow;
+      cursor: pointer;
+      animation: pisca 0.5s infinite;
+    }
+
+    .minecraft {
+      display: none;
+      width: 100%;
+      height: 90vh;
+      border: 10px solid lime;
+      margin-top: 20px;
+    }
+
+    .footer {
+      text-align: center;
+      color: gray;
+      font-size: 12px;
+      margin-top: 50px;
+    }
+  </style>
+
+  <script>
+    function toggleMinecraft() {
+      const mc = document.getElementById("mc");
+      mc.style.display = (mc.style.display === "none") ? "block" : "none";
+    }
+  </script>
+</head>
+
+<body>
+
+  <h1>💥 BryanIdiotaWeb 💥</h1>
+
+  <div class="caos">
+    Привет 你好 こんにちは 哈哈哈  
+    Я не знаю что это  
+    随机 随机 随机  
+    ERROR_404_BRAIN_NOT_FOUND  
+    数据损坏 █▓▒░  
+    системная ошибка  
+    WTF??? LOL XD  
+  </div>
+
+  <button class="botao-caos" onclick="toggleMinecraft()">
+    ⚠️ ABRIR PORTAL DO MINECRAFT ⚠️
+  </button>
+
+  <iframe
+    id="mc"
+    class="minecraft"
+    src="https://eaglercraft1-8.github.io">
+  </iframe>
+
+  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA1QAAAHgCAIAAAAtx7tAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQA..." />
+
+  <div class="footer">
+    BryanIdiotaWeb © erro mental permanente
+  </div>
+
+</body>
+</html>
